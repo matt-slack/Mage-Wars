@@ -1,73 +1,113 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"> 
-<!-- v1.15.0.0 --> 
-<html> 
-<head> 
-	<title>How to Play Mage Wars on OCTGN</title> 
-</head> 
-<style type="text/css"> 
-	.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } .datagrid {font: normal 12px/150% Times New Roman, Times, serif; background: #fff; overflow: hidden; border: 1px solid #36752D; }.datagrid table td, .datagrid table th { padding: 2px 8px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 9px solid #36752D; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #275420; border-left: 20Px solid #C6FFC2;font-size: 12px;font-weight: bold; }.datagrid table tbody .alt td { background: #DFFFDE; color: #275420; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; } 
-	.head {font: bold 20px/150% Times New Roman, Times, serif; color: #36752D; background: #fff; overflow: hidden; } 
-	.body {font: bold 15px/150% Times New Roman, Times, serif; color: #36752D; background: #fff; overflow: hidden; } 
-</style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- v1.15.0.0 -->
+<html>
 
- <div class="head">
-	 <p align="center">
-		 <strong><u>How to Play Mage Wars on OCTGN</u></strong>
-	 </p>
-</div>
+<head>
+	<title>How to Play Mage Wars on OCTGN</title>
+	<style type="text/css">
+		.title {
+			text-align: center;
+			font: bold 20px/150% Times, serif;
+			text-decoration: underline;
+			color: #000;
+			background: #fff;
+			overflow: hidden;
+		}
 
- <div class="body">
-	<p align="center">
-		<strong>v1.12.0.0</strong>
-	</p>
+		.body {
+			font: bold 15px/150% Times, serif;
+			color: #000;
+			background: #fff;
+			overflow: hidden;
+		}
 
-	 <p>Players are free to ignore any automation, but if you would like a little help with book keeping, follow the process below once the game has started:</p>
+		.version {
+			text-align: center;
+		}
 
-	 <p>1. From the Game menu select load Deck or press Ctrl+l, Pre-constructed decks are included, you will find them in the Decks | Mage Wars folder</p>
+		ol {
+			margin: 0;
+			padding: 0;
+		}
 
-	 <p>2. Once your Deck is validated you will be prompted to "Pick a Color" once you have selected your color your Mage will be automatically setup</p>
+		ol>li {
+			border: 1px solid black;
+			margin: .1em;
+			padding: .2em;
+			list-style-position: inside;
+		}
+	</style>
+</head>
 
-	 <p>3. Initiative will be rolled automatically and the winner of the roll will be prompted to select who will be the starting player</p>
+<body>
+	<div class="title">
+		<p>
+			How to Play Mage Wars on OCTGN
+		</p>
+	</div>
+	<div class="body">
+		<p class="version">
+			v1.12.0.0
+		</p>
 
-	 <p>4. The initiative marker will automatically be flipped to the color of the starting player and the game is then advanced to the Planning Stage</p>
+		<p>Players are free to ignore any automation, but if you would like a little help with book keeping, follow the process below once the game has started:</li>
 
-	 <p>5. Double click on any card in your hand area to prepare it for that round</p>
+			<ol>
+				<li>From the Game menu select load Deck or press Ctrl+l, Pre-constructed decks are included, you will find them in the Decks | Mage Wars folder</li>
 
-	 <p>6. To roll the Attack dice or the Effect die press the Tab (or F1) key to bring up the Roll Dice menu and select the number of dice you wish to roll</p>
+				<li>Once your Deck is validated you will be prompted to "Pick a Color" once you have selected your color your Mage will be automatically setup</li>
 
-	 <p>7. To cast an Enchantment that you have prepared during the Planning phase you can drag and drop the face down enchantment on to the target card. Alternatively, you can create an arrow pointing from the hidden Enchantment to the Target card by holding Shift+Left-Mouse click on the source card, then drag your mouse to the destination card. Using either method, if the target card is a legal target for the Enchantment, the card will automatically attach to the target card</p>
+				<li>Initiative will be rolled automatically and the winner of the roll will be prompted to select who will be the starting player</li>
 
-	 <p>8. Spellbinding is now supported for objects with the Spellbind trait. When you drag a legal spell card on top of an object with the Spellbind trait, the spell will now bind to the object and you will be able to cast the spell as normal. This works for familiars, spawnpoints, and wands, basically anything that you want to bind a spell to! For objects with the Spellbind trait and the Channeling trait, when you cast the bound spell it will use the mana available on the object first before using a Mages mana. You will be prompted for the amount of mana you want to spend, by default you should leave the amount as is. The BC (see below) will only subtract the amount needed to cast the spell after spending the mana available on the casting object.</p>
+				<li>The initiative marker will automatically be flipped to the color of the starting player and the game is then advanced to the Planning Stage</li>
 
-	 <p>9. Attacks are now automated by the in-game Battle Calculator (BC) , you can start an attack by creating an arrow from the attacker to the Defender by holding Shift+left-Mouse click on the source card, then drag your mouse to the destination card. If you have prepared an attack card and it is face Down, when you use an arrow to initiate an attack, you will be given the option to utilize the hidden attack spell and pay its casting cost during the automated attack sequence</p>
+				<li>Double click on any card in your hand area to prepare it for that round</li>
 
-	 <p>10. As always if you prefer not to utilize any of the available game automation's you can to ogle them on and off by right clicking on the game table and selecting the item you wish in the automation menu you wish to turn on/ off</p>
+				<li>To roll the Attack dice or the Effect die press the Tab (or F1) key to bring up the Roll Dice menu and select the number of dice you wish to roll</li>
 
-	 <p>Notes:</p>
-	 
-	 <ul><li>When you are done with a creatures action you can use the Ctrl+Right arrow to let the other player know that you are "Done" (when playing in OCTGN this is typically considered between action phases)</li>
+				<li>To cast an Enchantment that you have prepared during the Planning phase you can drag and drop the face down enchantment on to the target card. Alternatively, you can create an arrow pointing from the hidden Enchantment to the Target card by holding
+					Shift+Left-Mouse click on the source card, then drag your mouse to the destination card. Using either method, if the target card is a legal target for the Enchantment, the card will automatically attach to the target card</li>
 
-	 <li>When you have completed all of your actions during a Game Round ( Upkeep, Planning, Deployment, first Quick cast Phase, etc. ) press the Ctrl+Down arrow Key. The first player in each phase who presses the Ctrl+Down arrow will cause the phase marker to highlight in their color. Once the other player(s) have done the same, phase management automation will advance the game to the next phase.</li>
+				<li>Spellbinding is now supported for objects with the Spellbind trait. When you drag a legal spell card on top of an object with the Spellbind trait, the spell will now bind to the object and you will be able to cast the spell as normal. This works for
+					familiars, spawnpoints, and wands, basically anything that you want to bind a spell to! For objects with the Spellbind trait and the Channeling trait, when you cast the bound spell it will use the mana available on the object first before using a
+					Mages mana. You will be prompted for the amount of mana you want to spend, by default you should leave the amount as is. The BC (see below) will only subtract the amount needed to cast the spell after spending the mana available on the casting object.</li>
 
-	 <li>Place markers or tokens on cards by right clicking on the card and selecting the marker or token you want, or by using the associated keyboard shortcuts</li>
+				<li>Attacks are now automated by the in-game Battle Calculator (BC), you can start an attack by creating an arrow from the attacker to the Defender by holding Shift+left-Mouse click on the source card, then drag your mouse to the destination card. If
+					you have prepared an attack card and it is face Down, when you use an arrow to initiate an attack, you will be given the option to utilize the hidden attack spell and pay its casting cost during the automated attack sequence</li>
 
-	 <li>When using the Phase management automation the following items are automated:</li><ul>
-</div>
+				<li>As always if you prefer not to utilize any of the available game automation's you can toogle them on and off by right clicking on the game table and selecting the item you wish in the automation menu you wish to turn on/ off</li>
 
-<div class=" head"><u>Ready Stage</u></div><div class=" body"><ul>
+			</ol>
+			<p>Notes:</p>
 
-	<li>Initiative Phase -The Initiative Marker is flipped automatically to reflect the player who will act first this round</li>
+			<ul>
+				<li>When you are done with a creatures action you can use the Ctrl+Right arrow to let the other player know that you are "Done" (when playing in OCTGN this is typically considered between action phases)</li>
 
-	<li>Reset Phase -The action, Quickcast, Ready, and Mage ability (if needed) markers on cards are automatically reset</li>
+				<li>When you have completed all of your actions during a Game Round ( Upkeep, Planning, Deployment, first Quick cast Phase, etc. ) press the Ctrl+Down arrow Key. The first player in each phase who presses the Ctrl+Down arrow will cause the phase marker
+					to highlight in their color. Once the other player(s) have done the same, phase management automation will advance the game to the next phase.</li>
 
-	<li>Channel Phase -Mages, familiars, and other objects with the channeling attribute will have their mana supply automatically updated</li>
+				<li>Place markers or tokens on cards by right clicking on the card and selecting the marker or token you want, or by using the associated keyboard shortcuts</li>
 
-	<li>Upkeep Phase - Burn, Bleed, Rot damage are calculated and damage is automatically applied. Upkeep costs are now automated and you will be prompted to pay Upkeep costs. Other items such as Regeneration costs are not automated at this time</ul>
+				<li>When using the Phase management automation the following items are automated:</li>
+				<ul>
+	</div>
 
-	 <p>Have fun!<p>
+	<div class=" head"><u>Ready Stage</u></div>
+	<div class=" body">
+		<ul>
 
- </div>
+			<li>Initiative Phase -The Initiative Marker is flipped automatically to reflect the player who will act first this round</li>
 
-	<brclear="all"/>
+			<li>Reset Phase -The action, Quickcast, Ready, and Mage ability (if needed) markers on cards are automatically reset</li>
 
- </html>
+			<li>Channel Phase -Mages, familiars, and other objects with the channeling attribute will have their mana supply automatically updated</li>
+
+			<li>Upkeep Phase - Burn, Bleed, Rot damage are calculated and damage is automatically applied. Upkeep costs are now automated and you will be prompted to pay Upkeep costs. Other items such as Regeneration costs are not automated at this time</ul>
+
+		<p>Have fun!
+			<p>
+
+	</div>
+</body>
+
+</html>
