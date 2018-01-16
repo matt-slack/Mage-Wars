@@ -1,88 +1,1039 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!doctype html>
 <!-- v1.15.0.0 -->
 <html>
+
 <head>
-<title>Key Mappings for Mage Wars on OCTGN</title>
+  <title>Key Mappings for Mage Wars on OCTGN</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <style>
+    .datagrid {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      width: 100%;
+      font: normal 1em/150% Times, serif;
+      background: #fff;
+    }
+
+    .datagrid table {
+      border-collapse: collapse;
+      width: 33%;
+      transition: width 0.25s ease-in-out;
+    }
+
+    @media (max-width: 56em) {
+      .datagrid {
+        display: flex;
+        text-align: left;
+        width: 100%;
+        font: normal 1em/150% Times, serif;
+        background: #fff;
+      }
+      .datagrid table {
+        width: 100%;
+        transition: width 0.25s;
+      }
+    }
+    @media (min-width: 56em) and (max-width: 75em) {
+      .datagrid {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        width: 100%;
+        font: normal 1em/150% Times, serif;
+        background: #fff;
+      }
+      .datagrid table {
+        flex-grow: 2;
+        width: 50%;
+        transition: width 0.25s;
+      }
+    }
+
+    .datagrid table td {
+      padding: 2px 8px;
+      border: 1px solid gray;
+      border-spacing: 2px;
+      flex-grow: 1;
+      width: 50%;
+      margin: 0;
+      line-height: 2em;
+    }
+
+    .datagrid table thead th {
+      background: linear-gradient(#36752d 50%, #275420 100%);
+      color: #fff;
+      border-left: 1px solid gray;
+      font-size: 1.05em;
+      font-weight: bold;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .datagrid table tbody tr:nth-child(2n) {
+      background: #ced0ce;
+    }
+
+    .title {
+      font: bold 1.5em/150% Times, serif;
+      color: #000;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 1em;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .body {
+      font: bold 1em/150% Times, serif;
+      color: #000;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    td.firstLine {
+      background: #1f5673;
+      color: #fff;
+      font-weight: bold;
+      padding: 1em;
+    }
+
+    .kbd {
+      display: inline;
+      white-space: nowrap;
+      border: 1px solid #aaa;
+      border-radius: 0.35em;
+      box-shadow: 0.25em 0.15em 0.15em rgba(0, 0, 0, 0.2);
+      background-color: #f9f9f9;
+      background-image: linear-gradient(to bottom, #eee, #f9f9f9, #eee);
+      padding: 0.2em 0.3em;
+      margin: 0.2em;
+      font-family: Monospace, serif;
+    }
+
+    .menu {
+      display: table;
+      background-color: #ddd;
+      margin-bottom: 0.35em;
+      border: 1px solid gray;
+      min-width: 16em;
+    }
+
+    .menuTitle {
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 0.5em;
+    }
+
+    .menu ul {
+      padding: 0;
+      margin: 0;
+      list-style-position: inside;
+      list-style-type: circle;
+    }
+
+    .menu ul li {
+      padding-bottom: 0.25em;
+      margin-left: 0.5em;
+    }
+
+    li > a {
+      margin: -0.0625em;
+      padding: 0.5em 0;
+      color: rgb(0, 0, 238);
+      text-decoration: none;
+    }
+  </style>
 </head>
-  <style type="text/css">
-.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } .datagrid {font: normal 12px/150% Times New Roman, Times, serif; background: #fff; overflow: hidden; border: 1px solid #36752D; }.datagrid table td, .datagrid table th { padding: 2px 8px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 9Px solid #36752D; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #275420; border-left: 20Px solid #C6FFC2;font-size: 12px;font-weight: bold; }.datagrid table tbody .alt td { background: #DFFFDE; color: #275420; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }
-.head {font: bold 20px/150% Times New Roman, Times, serif; color: #36752D; background: #fff; overflow: hidden; }
-.body {font: bold 15px/150% Times New Roman, Times, serif; color: #36752D; background: #fff; overflow: hidden; }
-	</style>
-<div class="head">
-    <p align="center">
-        <strong><u>Key Mappings for Mage Wars on OCTGN</u></strong>
-    </p>
-</div>
-<div class="datagrid">
-<table>
-	<tbody>
-		<thead><tr><th>Game Actions</th><th>Game Actions</th></tr></thead>
-			<tr><td>Next Phase="Ctrl+Enter"</td><td>Done="Ctrl+Right"</td></tr>
-			<tr><td>Next Phase="Ctrl+Down"</td><td>Bring up OCTGN Console="Ctrl+SEC"</td></tr>
-			<tr><td>Roll Dice="Tab" or "F1"</td><td>Play Card Facedown="Alt+P"</td></tr>
-			<tr><td>Rotate Card="Ctrl+E"</td><td>Flip Card="Ctrl+F"</td></tr>
-			<tr><td>Discard="Del"</td><td>Obliterate Card="End"</td></tr>
-			<tr><td>Add a Vine Marker="Ctrl+F1"</td><td>Show Compass Rose="Ctrl+F2</td></tr>
-			<tr><td>Concede Game="Ctrl+End"</td><td>Load a Deck="Ctrl+L"</td></tr>
-			<tr><td>Focus Cursor to Chat Box="Ctrl+T"</td><td>Right Click Context Menu="Ctrl+Shift+F10"</td></tr>
-			<tr><td>Bring Card to Front="Page Up"</td><td>Send Card to Back="Page Down"</td></tr>
-			<tr><td>Attach to Targeted Card="Ctrl+Shift+Q"</td><td>Detach "Ctrl+Alt+Q"</td></tr>
-			<tr><td>Get Rulings/Clarifications for Card="Ctrl+H" (while hovering over a card)</td><td>Search Codex="Ctrl+H"</td></tr>
-			<tr><td>Use Untargeted Ability="Tab"</td><td></td></tr>
 
-	<thead><tr><th>Chat Emotes</th><th>Play with Different Boards</th></tr></thead>
-			<tr><td>Say Yes="Ctrl+Shift+1"</td><td>4X3 Westlock Arena="Alt+F1"</td></tr>
-			<tr><td>Say No="Ctrl+Shift+2"</td><td>6X4 Double Westlock="Alt+F2"</td></tr>
- 			<tr><td>Say Pass="Ctrl+Shift+3"</td><td>4X5 Forest Arena="Alt+F3"</td></tr>
-			<tr><td>Say Thinking...="Ctrl+Shift+4"</td><td>4x3 Inferno Arena="Alt+F4"</td></tr>
- 			<tr><td>Ask are you Thinking?="Ctrl+Shift+5"</td><td>4X4 Slimy Rocks Arena="Alt+F5"</td></tr>
- 			<tr><td>Your Turn?="Ctrl+Shift+6"</td><td>2x3 Apprentice Arena="Alt+F9"</td></tr>
- 			<tr><td>My Turn?="Ctrl+Shift+7"</td><td>3x3 Apprentice Arena="Alt+F10"</td></tr>
-			<tr><td>Do you wish to Reveal your Enchantment?="Ctrl+Shift+8"</td><td>Set No Game Board="Alt+F11"</td></tr>
- 			<td> </td><td>Add Alt Board Card="Alt+F12"</td></tr>
+<body>
+  <h2 class="title">
+    Key Mappings for Mage Wars on OCTGN
+  </h2>
+  <hr>
+  <div class="menu">
+    <div class="menuTitle">Contents</div>
+    <ul>
+      <li><a href="#mwActions">Mage Wars Game Actions</a></li>
+      <li><a href="#octgnActions">OCTGN Game Actions</a></li>
+      <li><a href="#chat">Chat Emotes</a></li>
+      <li><a href="#toggle">Toggle Markers/Tokens</a></li>
+      <li><a href="#add">Add Markers/Tokens</a></li>
+      <li><a href="#remove">Remove Markers/Tokens</a></li>
+    </ul>
+  </div>
+  <hr>
+  <div class="datagrid">
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th colspan=2><a id="mwActions">Mage Wars Game Actions</a></th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="firstLine">Shortcut</td>
+          <td class="firstLine">Description</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Down</div>
+          </td>
+          <td>Next Phase</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Right</div>
+          </td>
+          <td>Done</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">TAB</div> or
+            <div class="kbd">F1</div>
+          </td>
+          <td>Roll Dice and/or Card Action Menu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">F1</div>
+          </td>
+          <td>Create Vine Marker Here</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">F2</div>
+          </td>
+          <td>Show Rose Compass</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">End</div>
+          </td>
+          <td>Concede Game</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">H</div>
+          </td>
+          <td>Search Codex or Get Rulings/Clarifications for Card while hovering over card.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">F</div>
+          </td>
+          <td>Flip Card / Show Card Alternate</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">E</div>
+          </td>
+          <td>Rotate Card</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">F1</div>
+          </td>
+          <td>Create Vine Marker Here</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">Q</div>
+          </td>
+          <td>Attach to Targeted Card</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">TAB</div>
+          </td>
+          <td>Card Actions Menu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">Q</div>
+          </td>
+          <td>Detach</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Del</div>
+          </td>
+          <td>Discard</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">End</div>
+          </td>
+          <td>Obliterate Card</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">P</div>
+          </td>
+          <td>Play Card Facedown from Spellbook</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th colspan=2><a id="octgnActions">OCTGN Game Actions</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="firstLine">Shortcut</td>
+          <td class="firstLine">Description</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Spacebar</div> +
+            <div class="kbd">Left Click</div> +
+            <div class="kbd">Drag</div>
+          </td>
+          <td>Moves Gameboard</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">-</div>
+          </td>
+          <td>Zooms out Gameboard</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd"> + </div>
+          </td>
+          <td>Zooms in Gameboard</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">F11</div>
+          </td>
+          <td>Full Screen</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">L</div>
+          </td>
+          <td>Load a Deck</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">L</div>
+          </td>
+          <td>Start a Limited Game</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Esc</div>
+          </td>
+          <td>Bring up Main Window</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">F10</div>
+          </td>
+          <td>Bring up Right Click Context Menu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">T</div>
+          </td>
+          <td>Focus Cursor to Chat Box</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Page Up</div>
+          </td>
+          <td>Bring Card to Front</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Page Down</div>
+          </td>
+          <td>Bring Card to Back</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Shift</div> +
+            <div class="kbd">Left Click</div>
+          </td>
+          <td>Targets a Card</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Left Click</div>
+          </td>
+          <td>Adds card to current selection</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">P</div>
+          </td>
+          <td>Peeks at a (facedown) card</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th colspan=2><a id="chat">Chat Emotes</a></th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="firstLine">Shortcut</td>
+          <td class="firstLine">Description</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">1</div>
+          </td>
+          <td>Say Yes</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">2</div>
+          </td>
+          <td>Say No</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">3</div>
+          </td>
+          <td>Say Pass</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">4</div>
+          </td>
+          <td>Say Thinking...</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">5</div>
+          </td>
+          <td>Ask are you Thinking?</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">6</div>
+          </td>
+          <td>Your Turn?</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">7</div>
+          </td>
+          <td>My Turn?</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">8</div>
+          </td>
+          <td>Do you wish to Reveal your Enchantment?</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th colspan=2><a id="toggle">Toggle Markers/Tokens</a></th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="firstLine">Shortcut</td>
+          <td class="firstLine">Description</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">A</div>
+          </td>
+          <td>Toggle Action Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Q</div>
+          </td>
+          <td>Toggle Quick Cast Marker </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">R</div>
+          </td>
+          <td>Toggle Ready Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">R</div>
+          </td>
+          <td>Toggle Ready II Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">G</div>
+          </td>
+          <td>Toggle Guard Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">V</div>
+          </td>
+          <td>Toggle Voltaric Shield Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">D</div>
+          </td>
+          <td>Toggle Deflect Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">I</div>
+          </td>
+          <td>Toggle Invisible Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">G</div>
+          </td>
+          <td>Toggle Gate To Hell Marker</td>
+        </tr>
 
-		<thead><tr><th>Add Markers/Tokens Action</th><th>Remove Markers/Tokens</th></tr></thead>
-			<tr><td>Add Damage Counter="F2"</td><td>Remove Damage Counter="F4"</td></tr>
-			<tr><td>Add Mana Counter="Ctrl+M"</td><td>Remove Mana Counter="Ctrl+Shift+M"</td></tr>
-			<tr><td>Add Armor +1 Marker="Alt+A"</td><td>Remove Armor +1 Marker="Ctrl+Alt+A"</td></tr>
-			<tr><td>Add Burn Marker="Ctrl+B"</td><td>Remove Burn Marker="Ctrl+Shift+B"</td></tr>
-			<tr><td>Add Bleed Marker="Alt+B"</td><td>Remove Bleed Marker="Ctrl+Alt+B"</td></tr>
-			<tr><td>Add Corrode Marker="Ctrl+C"</td><td>Remove Corrode Marker="Ctrl+Shift+C"</td></tr>
-			<tr><td>Add Cripple Marker="Alt+C"</td><td>Remove Cripple Marker="Ctrl+Alt+C"</td></tr>
-			<tr><td>Add Daze Marker="Ctrl+D"</td><td>Remove Daze Marker="Ctrl+Shift+D"</td></tr>
-			<tr><td>Add Rage Marker="Alt+E"</td><td>Remove Rage Marker="Ctrl+Alt+E"</td></tr>
-			<tr><td>Add Disable Marker="Alt+D"</td><td>Remove Disable Marker="Ctrl+Alt+D"</td></tr>
-			<tr><td>Add Growth Marker="Alt+G"</td><td>Remove Growth Marker="Ctrl+Alt+G"</td></tr>
-			<tr><td>Add Banish Marker="Alt+H"</td><td>Remove Banish Marker="Ctrl+Alt+H"</td></tr>
-			<tr><td>Add Melee +1 Marker="Alt+M"</td><td>Remove Melee +1 Marker="Ctrl+Alt+M"</td></tr>
-			<tr><td>Add Ranged +1 Marker="Ctrl+N"</td><td>Remove Melee +1 Marker="Ctrl+Shift+N"</td></tr>
-			<tr><td>Add Stuck Marker="Ctrl+K"</td><td>Remove Stuck Marker="Ctrl+Shift+K"</td></tr>
-			<tr><td>Add Rot Marker="Alt+R"</td><td>Remove Rot Marker="Ctrl+Alt+R"</td></tr>
-			<tr><td>Add Slam Marker="Ctrl+S"</td><td>Remove Slam Marker="Ctrl+Shift+S"</td></tr>
-			<tr><td>Add Stun Marker="Alt+S"</td><td>Remove Stun Marker="Alt+Shift+S"</td></tr>
-			<tr><td>Add Tainted Marker="Alt+T"</td><td>Remove Tainted Marker="Alt+Shift+T"</td></tr>
-			<tr><td>Add Veteran Marker="Alt+V"</td><td>Remove Veteran Marker="Alt+Shift+V"</td></tr>
-			<tr><td>Add Weak Marker="Ctrl+W"</td><td>Remove Weak Marker="Ctrl+Shift+W"</td></tr>
-			<tr><td>Add Wrath Marker="Alt+W"</td><td>Remove Wrath Marker="Ctrl+Alt+W"</td></tr>
-			<tr><td>Add Zombie Marker="Ctrl+W"</td><td>Remove Zombie Marker="Ctrl+Shift+Z"</td></tr>
-			<tr><td>Add Other Marker="Ctrl+O"</td><td>Remove All Markers="Ctrl+Shift+A"</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th colspan=2><a id='add'>Add Markers/Tokens</a></th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="firstLine">Shortcut</td>
+          <td class="firstLine">Description</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">F2</div>
+          </td>
+          <td>Add Damage Counter</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">M</div>
+          </td>
+          <td>Add Mana Counter</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">A</div>
+          </td>
+          <td>Add Armor +1 Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">B</div>
+          </td>
+          <td>Add Burn Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">B</div>
+          </td>
+          <td>Add Bleed Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">C</div>
+          </td>
+          <td>Add Charge Token</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">C</div>
+          </td>
+          <td>Add Corrode Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">C</div>
+          </td>
+          <td>Add Cripple Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">O</div>
+          </td>
+          <td>Add Control Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">D</div>
+          </td>
+          <td>Add Daze Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">D</div>
+          </td>
+          <td>Add Disable Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">E</div>
+          </td>
+          <td>Add Rage Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">G</div>
+          </td>
+          <td>Add Growth Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">H</div>
+          </td>
+          <td>Add Banish Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">J</div>
+          </td>
+          <td>Add Grapple Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">K</div>
+          </td>
+          <td>Add Stuck Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">M</div>
+          </td>
+          <td>Add Melee +1 Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">N</div>
+          </td>
+          <td>Add Ranged +1 Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">P</div>
+          </td>
+          <td>Add Sleep Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">R</div>
+          </td>
+          <td>Add Rot Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">S</div>
+          </td>
+          <td>Add Slam Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">S</div>
+          </td>
+          <td>Add Stagger Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">S</div>
+          </td>
+          <td>Add Stun Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">T</div>
+          </td>
+          <td>Add Tainted Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">V</div>
+          </td>
+          <td>Add Veteran Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">W</div>
+          </td>
+          <td>Add Weak Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">W</div>
+          </td>
+          <td>Add Wish Token</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Alt</div> +
+            <div class="kbd">W</div>
+          </td>
+          <td>Add Wrath Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Z</div>
+          </td>
+          <td>Add Zombie Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">O</div>
+          </td>
+          <td>Add Other Marker/Token</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th colspan=2><a id="remove">Remove Markers/Tokens</a></th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="firstLine">Shortcut</td>
+          <td class="firstLine">Description</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">F4</div>
+          </td>
+          <td>Remove Damage Counter</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">M</div>
+          </td>
+          <td>Remove Mana Counter</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">A</div>
+          </td>
+          <td>Remove Armor +1 Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">B</div>
+          </td>
+          <td>Remove Burn Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">B</div>
+          </td>
+          <td>Remove Bleed Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">C</div>
+          </td>
+          <td>Remove Corrode Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">C</div>
+          </td>
+          <td>Remove Cripple Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">D</div>
+          </td>
+          <td>Remove Control Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">D</div>
+          </td>
+          <td>Remove Daze Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">D</div>
+          </td>
+          <td>Remove Disable Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">E</div>
+          </td>
+          <td>Remove Rage Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">G</div>
+          </td>
+          <td>Remove Growth Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">H</div>
+          </td>
+          <td>Remove Banish Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">J</div>
+          </td>
+          <td>Remove Grapple Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">K</div>
+          </td>
+          <td>Remove Stuck Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">M</div>
+          </td>
+          <td>Remove Melee +1 Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">N</div>
+          </td>
+          <td>Remove Ranged +1 Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">R</div>
+          </td>
+          <td>Remove Rot Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">S</div>
+          </td>
+          <td>Remove Slam Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">P</div>
+          </td>
+          <td>Remove Sleep Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">S</div>
+          </td>
+          <td>Remove Stun Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">T</div>
+          </td>
+          <td>Remove Tainted Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">V</div>
+          </td>
+          <td>Remove Veteran Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">W</div>
+          </td>
+          <td>Remove Weak Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Alt</div> +
+            <div class="kbd">W</div>
+          </td>
+          <td>Remove Wrath Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div> +
+            <div class="kbd">Z</div>
+          </td>
+          <td>Remove Zombie Marker</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="kbd">Ctrl</div> +
+            <div class="kbd">Shift</div>+
+            <div class="kbd">A</div>
+          </td>
+          <td>Remove All Markers/Tokens</td>
+        </tr>
 
-		<thead><tr><th>Toggle Markers/Tokens</th><th>Toggle Markers/Tokens</th></tr></thead>
-			<tr><td>Toggle Action Marker="Ctrl+A"</td><td>Toggle Quick Cast Marker="Ctrl+Q"</td></tr>
-			<tr><td>Toggle Ready Marker="Ctrl+R"</td><td>Toggle Ready Marker II="Ctrl+Shift+R"</td></tr>
-			<tr><td>Toggle Voltaric Shield Marker="Ctrl+V"</td><td>Toggle Guard Marker="Ctrl+G"</td></tr>
-			<tr><td>Toggle Invisible Marker="Ctrl+I"</td><td>Toggle Deflect Marker="Alt+Shift+D"</td></tr>
-	</tbody>
-	</table></div>
-	
-	<div class="head"><u>Create a Target on a Card</u></div><div class="body"><ul>
-		<li>You can target a card by holding shift and left-clicking on it</li>
-		<li>You clear the target the same way</li>
-		<li>You can have multiple cards targeted</li></ul>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="body">
+    <hr>
+    <h3>Additional Notes</h3>
+    <hr>
+    <div>Create a Target on a Card:</div>
+    <div>
+      <ul>
+        <li>You can target a card by holding shift and left-clicking on it</li>
+        <li>You clear the target the same way</li>
+        <li>You can have multiple cards targeted</li>
+      </ul>
+    </div>
 
-	<div class="head"><u>Create an Arrow from one card to another</div></u><div class="body"><ul>
-		<li>You can create an arrow pointing from one card to another by holding Shift+Left-click on the source card, then drag your mouse to the destination card</li>
-		<li>Clear the arrow by shift+left-clicking on the source card again</li>
-		<li>Pro Tip: Use this to point out which card you want to attach your Enchantment to and you will be asked to pay for the casting cost.</li></ul>
+    <div>Create an Arrow from one card to another:</div>
+    <div>
+      <ul>
+        <li>You can create an arrow pointing from one card to another by holding Shift+Left-click on the source card, then drag your mouse to the destination card</li>
+        <li>Clear the arrow by shift+left-clicking on the source card again</li>
+        <li>Pro Tip: Use this to point out which card you want to attach your Enchantment to and you will be asked to pay for the casting cost.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>
